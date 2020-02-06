@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mmapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_new"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Log.LogActivity"></activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".Map.MapActivity" />
+        <activity android:name=".market.ChecklistActivity" />
+        <activity android:name=".market.Sub2Activity" />
+        <activity android:name=".Diarys.SelectActivity" />
+        <activity android:name=".Diarys.subActivity"  />
+        <activity android:name=".Diarys.DiaryActivity" />
+        <activity android:name=".market.MarketActivity" />
+        <activity android:name=".web.YoutubeActivity" />
+        <activity android:name=".web.twiterActivity" />
+        <activity android:name=".web.InstaActivity" />
+        <activity android:name=".web.FacebookActivity" />
+        <activity android:name=".JoinActivity" />
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Chatbot.ChatbotActivity" />
+        <activity android:name=".MainActivity" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDCAST0IKCFPdg9XWcX9M6cLXS7k0r0hwQ" />
+    </application>
+
+</manifest>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".JoinActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="회 원 가 입"
+        android:textSize="25dp"
+        android:gravity="center"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#fdddde"/>
+
+    <!-- - - - - - User Name - - - - - -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/userid"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:tint="@color/iconColor"
+            android:src="@drawable/icon_userid"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_id"
+                android:hint="아이디"
+                android:textSize="14dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중복 검사"
+            android:layout_gravity="center"
+            android:id="@+id/overlap_search_id"
+            />
+    </LinearLayout>
+
+    <!-- - - - - - Password - - - - - -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/password"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:tint="@color/iconColor"
+            android:src="@drawable/icon_password" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="비밀번호"
+                android:textSize="14dp"
+                android:id="@+id/user_pw"
+                android:inputType="numberPassword"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!-- - - - - - Password - - - - - -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/password_check"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:tint="@color/iconColor"
+            android:src="@drawable/icon_password" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="비밀번호 확인"
+                android:textSize="14dp"
+                android:id="@+id/user_pw_check"
+                android:inputType="numberPassword"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <!-- - - - - - name - - - - - -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/address"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:tint="@color/iconColor"
+            android:src="@drawable/ticket_account" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_name"
+                android:hint="이  름"
+                android:textSize="14dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+
+    <!-- - - - - - - e-mail - - - - - - -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:tint="@color/iconColor"
+            android:src="@drawable/star_circle" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_nick"
+                android:hint="닉네임"
+                android:textSize="14dp"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중복 검사"
+            android:layout_gravity="center"
+            android:id="@+id/overlap_search_nick" />
+    </LinearLayout>
+
+    <!-- - - - - - - 회원가입 완료 버튼 - - - - - - -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="245dp">
+        <Button
+            android:id="@+id/join_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완  료" />
+    </LinearLayout>
+</LinearLayout>
